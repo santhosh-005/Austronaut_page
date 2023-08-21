@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE</title>
+<style>
+ *{
+ margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+     body{
+     width: 100vw;
+     height: 100vh;
+    background-image: url("https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/sky-moon-bg%5B1%5D.png");
+     background-size:100% 100%;
+     background-repeat: no-repeat;
+ }
+
+ #astraunaut-1{
+ height: 500px;
+ position: absolute;
+ top: 0%;
+ left: 5%;
+ animation: floating1 3s infinite ease-in-out;
+animation-direction: alternate;
+ }
+
+@keyframes floating1{
+ 0%{
+top:5%;
+ }
+ 50%{
+top:3%;
+ }
+ }
+
+#astraunaut-2{
+height: 425px;
+position: absolute;
+top: 30%;
+ left: 30%;
+animation: floating2 5s infinite ease-in-out;
+animation-direction: alternate;
+}
+
+ @keyframes floating2{
+0%{
+top:30%;
+ }
+50%{
+ top:25%;
+}
+ }
+
+form{
+width: 450px;
+ position: absolute;
+ right: 5%;
+ top: 10%;
+ background-color: white;
+ border-radius: 5px;
+ padding: 0 10vh ;
+
+ }
+
+h1{
+text-align: center;
+ margin-top: 25px;
+}
+
+ label{
+ margin-top: 20px;
+ margin-bottom: 5px;
+}
+
+.input-tags{
+ width: 300px;
+ height: 30px;
+ padding-left: 2%;
+ }
+
+ .element{
+display: block;
+}
+
+ #radio-div{
+ width: 80%;
+ border: 2px solid red;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+
+}
+
+ #submit-btn{
+ display: block;
+ margin: auto;
+margin-top: 25px;
+ margin-bottom: 25px;
+background-color: orange;
+ border-radius: 15px;
+ padding: 10px;
+ color: white;
+border: 0;
+ }
+ #No{
+   margin-left: 15px;
+ }
+ </style>
+</head>
+<body>
+    <img id="astraunaut-1" src="https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/space-man-1%5B1%5D.png" alt="Astraunaut-1"/>
+    <img id="astraunaut-2" src="https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/space-man-2%5B1%5D.png" alt="Astraunaut-2"/>
+
+<form>
+<h1>Rocket around the <br/> moon with your BFFs</h1>
+ <label class="element" for="countries">Departure Country</label>
+<select name="countries" id="countries" class="input-tags">
+ <option value="India">India</option>
+ <option value="USA">USA</option>
+ <option value="England">England</option>
+ <option value="UAE">UAE</option>
+ <option value="Japan">Japan</option>
+ <option value="china">china</option>
+</select>
+
+ <label class="element" for="">No. of Space Travellers</label>
+<input class="element input-tags" type="number"/>
+
+<label class="element" for="">Your Email</label>
+<input class="element input-tags" type="email" placeholder="UnknownPerson@gmail.com">
+
+<label for="" class="element">Do you wanna rent a space suit?</label>
+<input  type="radio" name="rent" >
+<label for="" >Yes, Please</label>
+<input type="radio" name="rent" id="No">
+<label  for="" >No, I have my own</label>
+</div>
+ <input id="submit-btn" type="submit" value="TAKE US TO SPACE" >
+
+</form>
+
+</body>
+</html>
+
